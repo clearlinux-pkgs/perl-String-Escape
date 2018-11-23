@@ -4,7 +4,7 @@
 #
 Name     : perl-String-Escape
 Version  : 2010.002
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/E/EV/EVO/String-Escape-2010.002.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/E/EV/EVO/String-Escape-2010.002.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libs/libstring-escape-perl/libstring-escape-perl_2010.002-2.debian.tar.xz
