@@ -4,7 +4,7 @@
 #
 Name     : perl-String-Escape
 Version  : 2010.002
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/E/EV/EVO/String-Escape-2010.002.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/E/EV/EVO/String-Escape-2010.002.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libs/libstring-escape-perl/libstring-escape-perl_2010.002-2.debian.tar.xz
@@ -80,7 +80,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-String-Escape
-cp %{_builddir}/String-Escape-2010.002/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-String-Escape/048c9afd00f8a919908c5775cbee1c4c8527366a
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-String-Escape/048c9afd00f8a919908c5775cbee1c4c8527366a
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -104,4 +104,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/String/Escape.pm
+/usr/lib/perl5/vendor_perl/5.30.2/String/Escape.pm
